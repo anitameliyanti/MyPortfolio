@@ -192,6 +192,26 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: transparent;
+  -webkit-text-stroke: .5px white;
+  background-image: linear-gradient(#484a4a, #055d7f);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -410px 0;
+  animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText {
+  0%,
+  95%,
+  100% {
+    background-position: -410px 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
 }
 
 .title {
@@ -271,6 +291,10 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.text-container {
+  text-align: justify;
 }
 
 .about-details-container {
